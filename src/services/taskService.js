@@ -5,7 +5,7 @@ let idCounter = 1;
 
 // Criar - Agora recebe title e priority
 const addTask = (title, priority,completed) => {
-    // Passamos a priority para a função do model
+    // Passamos a priority para o Model
     const task = createTask(idCounter++, title, priority,completed);
     tasks.push(task);
     return task;
@@ -14,7 +14,7 @@ const addTask = (title, priority,completed) => {
 // Listar
 const getTasks = () => tasks;
 
-// Atualizar - Também pode atualizar a prioridade se quiser
+// Atualizar
 const updateTask = (id, title, priority, completed) => {
     const task = tasks.find(t => t.id == parseInt(id));
 
