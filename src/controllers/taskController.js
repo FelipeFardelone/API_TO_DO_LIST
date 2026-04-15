@@ -72,13 +72,13 @@ const deleteTask = (req, res, id) => {
 const getTaskById = (req, res, id) => {
     const task = taskService.getTaskById(id);
 
-    // Validação: Se a tarefa não existir, retorna erro 404
+    // Se a tarefa não existir ele aparecerá erro 404
     if (!task) {
         res.statusCode = 404;
         return res.end(JSON.stringify({ message: 'Tarefa não encontrada' }));
     }
 
-    // Se existir, retorna a tarefa com status 200
+    // Se existir aparecerá a tarefa com status 200
     res.statusCode = 200;
     res.end(JSON.stringify(task));
 };
