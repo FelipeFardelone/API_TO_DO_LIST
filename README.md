@@ -7,7 +7,7 @@ A aplicação permite o gerenciamento completo de uma lista de tarefas, onde cad
 
 ## Tecnologias Utilizadas
 * **Node.js**: Aonde se executa o servidor
-* **Express**: aonde se usa frameworks para a utilização das rotas
+* **Express**: Aonde se usa frameworks para a utilização das rotas
 * **JavaScript**: Linguagem principal
 * **Git**: Controle de versão
 
@@ -22,8 +22,14 @@ dependências você irá executar o aplicativo
 
 ## Como Executar o Aplicativo
 1. Primeiro você precisa iniciar o servidor, para inicialo utilize esse comando no terminal: npm start
-2. após fazer isso, a API estará rodando em http://localhost:3000
-3. instale a extensão: Thunder Client ou ferramentas como Postman
+2. Após fazer isso, a API estará rodando em http://localhost:3000
+3. Instale a extensão: Thunder Client ou ferramentas como Postman
 Depois de fazer todos os passos você poderá testar os endpoints GET, POST, PUT e DELETE
 
-## Explicação da Solução (Como o problema foi resolvido)
+## Como o problema foi resolvido
+O problema foi resolvido através da implementação de uma arquitetura modular baseada em camadas, garantindo que o código seja organizado e fácil de manter:
+1. Routes: Definem as rotas de acesso e direcionam as requisições para os controladores
+2. Controllers: Processam as requisições vindas das rotas, validam os dados de entrada e formatam a resposta JSON enviada ao cliente
+3. Services: É aonde se concentra a lógica de negócio, realizando a manipulação dos dados
+4. Models: Representam a estrutura da tarefa dentro do sistema
+5. Armazenamento: Os dados são armazenados em memória, permitindo operações rápidas de criação, leitura, atualização e exclusão de tarefas sem precisar fazer um banco de dados externo, sendo algo mais simples
