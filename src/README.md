@@ -22,7 +22,7 @@ dependências você irá executar o aplicativo
 
 ## Como Executar o Aplicativo
 1. Primeiro você precisa iniciar o servidor, para inicialo utilize esse comando no terminal: npm start
-2. Após fazer isso, a API estará rodando em http://localhost:3000
+2. Após fazer isso, a API estará rodando em [http://localhost:3000](http://localhost:3000)
 3. Instale a extensão: Thunder Client ou ferramentas como Postman
 Depois de fazer todos os passos você poderá testar os endpoints GET, POST, PUT e DELETE
 
@@ -33,3 +33,7 @@ O problema foi resolvido através da implementação de uma arquitetura modular 
 3. Services: É aonde se concentra a lógica de negócio, realizando a manipulação dos dados
 4. Models: Representam a estrutura da tarefa dentro do sistema
 5. Armazenamento: Os dados são armazenados em memória, permitindo operações rápidas de criação, leitura, atualização e exclusão de tarefas sem precisar fazer um banco de dados externo, sendo algo mais simples
+
+## Como acessar o vídeo sobre esse trabalho
+1. Clique nesse link: [https://youtu.be/kUEsUEcrABE](https://youtu.be/kUEsUEcrABE)
+2. Se divirta assitindo o vídeo
